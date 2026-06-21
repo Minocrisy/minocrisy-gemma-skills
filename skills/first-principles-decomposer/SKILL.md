@@ -1,6 +1,7 @@
 ---
 name: first-principles-decomposer
 description: Decompose problems, goals, strategies, or beliefs down to fundamental truths, facts, and axioms before rebuilding conclusions. Activate for complex or high-stakes analysis where assumptions may be shaky.
+version: 0.1.0
 ---
 
 # First Principles Decomposer
