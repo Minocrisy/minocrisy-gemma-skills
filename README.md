@@ -2,6 +2,10 @@
 
 > **High-signal Agent Skills for Gemma 4 E2B** — Private, offline tools for serious thinking.
 
+<p align="center">
+  <img src="assets/banner.jpg" alt="minocrisy-gemma-skills" width="100%" />
+</p>
+
 [![Gemma 4 E2B](https://img.shields.io/badge/Gemma_4-E2B-4285F4?style=flat&logo=google)](https://ai.google.dev/gemma)
 [![Text Skills](https://img.shields.io/badge/Type-Text_Only-34A853?style=flat)](https://github.com/Minocrisy/minocrisy-gemma-skills)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](LICENSE)
@@ -39,15 +43,17 @@ If a skill does not meaningfully improve private serious work, it does not belon
 - **Meta skills:** skill-architect (new), skill-update-reminder
 - **New:** Local Decision Journal — local memory + tagging, multi-tag search, and date range filtering
 
-See [CATALOG.md](CATALOG.md) for per-skill details and status.
+See [CATALOG.md](CATALOG.md) for per-skill details.
 
 ## Featured Skills
 
-| Skill | Use Case | Key Feature |\n|-------|----------|-------------|\n| [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md) | Break down complex problems to fundamentals | Strong for high-stakes analysis |
-| [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md) | Identify risks before committing | Prospective failure simulation |
-| [Decision Framework Builder](skills/decision-framework-builder/SKILL.md) | Structure important choices | Weighted criteria + sensitivity |
-| [Local Decision Journal](skills/local-decision-journal/SKILL.md) | Capture & retrieve decisions over time | Tagging + date range + AND/OR search |
-| [Skill Architect](skills/skill-architect/SKILL.md) | Create or improve skills | Enforces repo quality standards |
+| Skill | Use Case | Key Feature |
+|-------|----------|-------------|
+| 🧠 [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md) | Break down complex problems to fundamentals | Strong for high-stakes analysis |
+| ⚠️ [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md) | Identify risks before committing | Prospective failure simulation |
+| 📊 [Decision Framework Builder](skills/decision-framework-builder/SKILL.md) | Structure important choices | Weighted criteria + sensitivity |
+| 📓 [Local Decision Journal](skills/local-decision-journal/SKILL.md) | Capture & retrieve decisions over time | Tagging + date range + AND/OR search |
+| 🏗️ [Skill Architect](skills/skill-architect/SKILL.md) | Create or improve skills | Enforces repo quality standards |
 
 ## Installation
 
@@ -78,7 +84,7 @@ See the [Skill Update Reminder](skills/skill-update-reminder/SKILL.md) for in-ap
 
 ## Repository Layout
 
-- `skills/` — One kebab-case folder per skill (Text-only `SKILL.md`)
+- `skills/` — Individual skills. One kebab-case folder per skill (Text-only `SKILL.md`)
 - `CATALOG.md` — Full index with status & versions
 - `QUALITY-STANDARDS.md` — Strict rules for what ships
 - `CONTRIBUTING.md` — How to add high-quality skills
