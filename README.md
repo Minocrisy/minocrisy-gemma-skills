@@ -3,7 +3,7 @@
 > **High-signal Agent Skills for Gemma 4 E2B** — Private, offline tools for serious thinking.
 
 <p align="center">
-  <img src="assets/banner.jpg" alt="minocrisy-gemma-skills" width="100%" />
+  <img src="assets/banner.svg" alt="minocrisy-gemma-skills banner" width="100%" />
 </p>
 
 [![Gemma 4 E2B](https://img.shields.io/badge/Gemma_4-E2B-4285F4?style=flat&logo=google)](https://ai.google.dev/gemma)
