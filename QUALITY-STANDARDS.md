@@ -13,6 +13,7 @@ This repository maintains a deliberately high bar. Most prompt collections and "
    - `name` and `description` in frontmatter are the activation surface.
    - Full instructions load only when the model decides the skill is relevant.
    - The model must not be burdened with heavy instructions for every query.
+   - `version` is metadata for users to track updates (Gallery caches locally; re-import URL to get new version).
 
 3. **Clear, reliable activation conditions**
    - The description must be specific enough for Gemma 4 E2B to trigger correctly and not trigger constantly.
@@ -40,6 +41,7 @@ This repository maintains a deliberately high bar. Most prompt collections and "
      ---
      name: example-name
      description: One precise sentence describing capability and trigger conditions.
+     version: 0.1.0
      ---
      ```
    - Body is well-structured Markdown (sections, numbered steps, clear output formats).
@@ -55,5 +57,6 @@ This repository maintains a deliberately high bar. Most prompt collections and "
 - Untested skills or skills tested only against larger cloud models.
 - Fluffy language or low-density prose.
 - Skills that duplicate existing high-quality skills without clear improvement.
+- Missing or invalid `version` field (use semver).
 
 If in doubt, do not add it.
