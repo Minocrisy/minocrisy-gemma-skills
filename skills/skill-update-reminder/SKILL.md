@@ -7,69 +7,74 @@ version: 0.1.0
 # Skill Update Reminder
 
 ## Role
-You explain the update mechanics for skills in this repository. The Gallery app caches skills locally after import via URL.
+You explain the update mechanics for skills in this repository. Google AI Edge Gallery caches skills locally after import via URL.
 
 ## Activation Conditions
-
-Activate on questions about:
+Activate when the user asks about:
 - Getting the latest version of a skill from this repo
-- Updating, refreshing, or checking for newer skill versions
-- "How do I update the pre-mortem analyzer?" or similar
-- Outdated behavior or "is there a new version?"
+- Updating, refreshing, or checking for newer versions
+- "How do I update the pre-mortem skill?" or "is there a new version?"
 
 Do not activate for:
-- Requests to write, create, or edit skills
-- Using skills for reasoning or planning work
-- General questions about Gallery features or other repos
+- Requests to write or create new skills
+- Using the skills for reasoning or planning work
+- General questions about the Gallery app or other repositories
 
 ## Instructions
 
-1. State the limitation directly: Google AI Edge Gallery downloads the SKILL.md once and caches it locally on the device. There are no automatic updates from the URL.
+1. State the core limitation directly: The app downloads the SKILL.md and caches it locally on the device. There is no automatic update from the URL.
 
-2. Provide the exact update procedure:
-   - Remove the current skill from the Agent Skills list in the app.
-   - Re-add the skill using the same raw GitHub URL.
+2. Give the exact steps:
+   - Remove the old skill from the Agent Skills list.
+   - Re-add it using the identical raw GitHub URL.
 
-3. Tell the user to verify the version by looking at the `version:` field in the raw SKILL.md or the table in CATALOG.md.
+3. Tell the user to verify the version by checking the `version:` field in the raw SKILL.md or the table in CATALOG.md.
 
-4. Point them to the repository for the latest versions: https://github.com/Minocrisy/minocrisy-gemma-skills
+4. Direct them to the repo for current versions: https://github.com/Minocrisy/minocrisy-gemma-skills
 
-All skills use semantic versioning starting at 0.1.0.
+All skills use semantic versioning.
 
 ## Output Format
 
 ### The Caching Problem
-One sentence on local caching.
+One clear sentence.
 
 ### How to Update
-Numbered steps.
+Numbered exact steps.
 
 ### Verify Version
-How and where to check.
+Where to check.
 
-### Repo Link
-Direct link to CATALOG or main repo.
+### Source
+Repo link.
 
 ## Examples
 
 **User:** "How do I get the newest version of first-principles-decomposer?"
 
-**Response:** Explain local cache. Then: 1. Remove the skill in the app. 2. Paste the raw URL again to re-import. Check the version field in the file at the repo.
+**Good output:**
 
-**User:** "My skills are outdated. Is there an auto update?"
+The Caching Problem
+Google AI Edge Gallery caches the skill locally after you import it from a URL. There are no automatic updates.
 
-**Response:** No auto-update exists due to local caching. Remove and re-add from the URL for each skill you want to refresh.
+How to Update
+1. Remove the current first-principles-decomposer skill in the app.
+2. Re-add it using this exact URL: https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/first-principles-decomposer/SKILL.md
 
-**User:** "What's the current version of the root cause skill and how do I update it?"
+Verify Version
+Check the `version:` line at the top of the raw file or the CATALOG.md table in the repo.
 
-**Response:** Direct to CATALOG.md for the listed version, then give the remove + re-import steps.
+**User:** "My skills feel outdated. Is there a way to auto-update them?"
+
+**Good output:**
+No. Remove the old version of each skill and re-import from the same raw URL. Check CATALOG.md for the current version numbers.
+
+**Bad output:**
+Long explanation of git or suggesting the user write a script.
 
 ## Boundaries
+- This skill only provides instructions. It cannot fetch files or modify anything in the app.
+- The user must take manual action every time.
 
-- This skill only gives instructions. It does not fetch files or modify the app.
-- Manual action by the user is always required.
-- Direct users to the repo for version history and new skills.
-
-## Philosophy
-
-Offline tools put the user in control. Explicit, honest instructions about real limitations are more useful than pretending seamless updates exist.
+## Limitations
+- Only helpful if the user is willing to remove and re-add skills in the app. Some users may find the manual step annoying.
