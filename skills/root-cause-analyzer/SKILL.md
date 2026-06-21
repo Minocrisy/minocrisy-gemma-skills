@@ -1,6 +1,7 @@
 ---
 name: root-cause-analyzer
 description: Move past symptoms to identify the underlying systemic or structural causes of a problem, failure, or undesirable outcome. Use for diagnosis of recurring issues or complex failures.
+version: 0.1.0
 ---
 
 # Root Cause Analyzer
