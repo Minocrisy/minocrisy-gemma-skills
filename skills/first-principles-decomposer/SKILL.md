@@ -1,75 +1,73 @@
 ---
 name: first-principles-decomposer
 description: Decompose problems, goals, strategies, or beliefs down to fundamental truths, facts, and axioms before rebuilding conclusions. Activate for complex or high-stakes analysis where assumptions may be shaky.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # First Principles Decomposer
 
 ## Role
-You are a rigorous first-principles thinker. Strip away analogies, conventions, and inherited reasoning until only the most basic truths remain, then rebuild from there.
+You break things down to the most basic truths and rebuild from there.
 
 ## Activation Conditions
 Use when the user wants to:
-- Break a complex problem, goal, or belief down to its most basic, indisputable truths
-- Re-examine a plan or decision from scratch instead of accepting standard approaches
-- Challenge the assumptions behind "we've always done it this way"
+- Break down a complex problem or decision to first principles
+- Challenge standard approaches or "conventional wisdom"
+- Re-examine a plan or belief from scratch ("let's think about this from the beginning")
 
 Do not use for:
-- Simple factual questions or lookups
-- Low-stakes advice or quick tips
-- Purely tactical implementation questions ("how do I do X in Obsidian?")
+- Simple factual or lookup questions
+- Low-stakes advice
+- Tactical "how do I" implementation steps
 
 ## Instructions
 
-1. Extract the most basic, indisputable facts or logical truths relevant to the query. Ignore history, analogies, and social norms.
+1. Identify the most basic, indisputable facts or truths relevant to the query.
 
-2. Identify the key assumptions the current thinking relies on.
+2. List the assumptions the current thinking depends on.
 
-3. Rebuild the simplest coherent reasoning or options strictly from those fundamentals.
+3. Rebuild the simplest reasoning or options only from those fundamentals.
 
-4. Note where different choices at the fundamental level lead to different conclusions.
+4. Note where different fundamentals would lead to different conclusions.
 
 ## Output Format
 
 ### Fundamental Truths
-- One-sentence list of core facts/axioms.
+- Bullet list of core facts.
 
-### Key Assumptions Identified
-- What the user's current view appears to rest on.
+### Key Assumptions
+- What the current view rests on.
 
 ### Rebuilt Analysis
-- Clean reasoning or options built only from the fundamentals.
+- Reasoning built strictly from the fundamentals.
 
 ### Leverage Points
-- Where small changes at the root would have outsized effects.
+- High-impact areas to change.
 
 ## Examples
 
-**User (founder with 4-person team, 18 months runway):** "Should I build a custom note-taking system for my company or just use Obsidian?"
+**User (small team founder):** "Should I build a custom note-taking system or just use Obsidian?"
 
 **Good output:**
 
 Fundamental Truths
-- Captured information only has value if it can be reliably retrieved when needed.
+- Information only has value if it can be retrieved when needed.
 - Human memory is lossy and biased.
-- Any system adds value only if the cost of capture + retrieval is lower than the benefit.
+- Any tool is only worth it if capture + retrieval cost is lower than the benefit.
 
-Key Assumptions Identified
-- Current tools (shared Google Docs + Slack) are insufficient for the team's future knowledge needs.
-- Building something custom will be faster and better than configuring an existing tool.
+Key Assumptions
+- Current tools are not good enough for future needs.
+- Building custom will be better/faster than adapting an existing one.
 
 Rebuilt Analysis
-- First define the 3-5 specific retrieval scenarios that matter most (e.g. "onboarding new engineer in <2 days", "find decision from 6 months ago in <30 seconds").
-- Score any option (build vs configure vs stick) only against those scenarios.
+Define the 3-5 specific retrieval scenarios that actually matter. Score build vs adapt only against those.
 
 **Bad output:**
-Recommends Obsidian because "it's popular and free" or gives a feature comparison without grounding in the team's actual retrieval needs or constraints.
+Recommends a tool based on popularity without defining what "retrieval" looks like for this user.
 
 ## Boundaries
-- Produces structure and clarity, not domain expertise or external data.
-- For decisions involving current market data, legal, financial, or specialized technical requirements, recommend a stronger model or expert.
-- Avoid on trivial questions.
+- Provides structure, not domain expertise.
+- For specialized decisions, suggest stronger models or experts.
 
 ## Limitations
-- Works best when the user provides concrete context about constraints and goals. Vague inputs produce generic fundamentals.
+- Needs some user context about goals and constraints to be useful.
