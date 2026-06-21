@@ -35,7 +35,7 @@ The first batch focuses on core reasoning and decision tools:
 - [Root Cause Analyzer](skills/root-cause-analyzer/SKILL.md)
 - [Goal to Atomic Action Decomposer](skills/goal-to-atomic-action-decomposer/SKILL.md)
 
-See [CATALOG.md](CATALOG.md) for the full list and status.
+See [CATALOG.md](CATALOG.md) for the full list and status. The Skill Architect meta-skill creates and improves skills while strictly enforcing these quality standards.
 
 ## Installation
 
