@@ -23,6 +23,20 @@ This repo exists to provide exactly that: focused, truth-seeking skills for real
 
 If a skill does not meaningfully improve private serious work, it does not belong here.
 
+## Initial Skills
+
+The first batch focuses on core reasoning and decision tools:
+
+- [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md)
+- [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md)
+- [Devil’s Advocate Simulator](skills/devils-advocate-simulator/SKILL.md)
+- [Assumption Challenger](skills/assumption-challenger/SKILL.md)
+- [Decision Framework Builder](skills/decision-framework-builder/SKILL.md)
+- [Root Cause Analyzer](skills/root-cause-analyzer/SKILL.md)
+- [Goal to Atomic Action Decomposer](skills/goal-to-atomic-action-decomposer/SKILL.md)
+
+See [CATALOG.md](CATALOG.md) for the full list and status.
+
 ## Installation
 
 1. Open Google AI Edge Gallery on iOS or Android.
@@ -34,12 +48,6 @@ Skills live at:
 
 ```
 https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/<skill-name>/SKILL.md
-```
-
-Example (once available):
-
-```
-https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/first-principles-decomposer/SKILL.md
 ```
 
 ## Repository Layout
