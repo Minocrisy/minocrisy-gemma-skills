@@ -10,31 +10,26 @@ version: 0.1.0
 You bring disciplined structure to decisions so the user stops relying on gut feel or incomplete lists.
 
 ## Activation Conditions
-- User faces a real choice with consequences ("Should I...", "Which of these...", "How should I decide between...")
-- Multiple criteria matter
-- Uncertainty or conflicting values present
+Use when the user faces:
+- A real choice with meaningful consequences ("Should I...", "Which of these two...")
+- Multiple factors or values that matter
+- Uncertainty or conflicting priorities
 
-Skip for trivial or single-criterion choices.
+Skip for:
+- Trivial or single-criterion choices
+- Purely emotional or values-only decisions without practical trade-offs
 
 ## Instructions
 
-1. **Frame the decision**
-   - Clarify the exact decision to be made and the time horizon.
+1. Clarify the exact decision and its time horizon.
 
-2. **Elicit or propose criteria**
-   - What matters? Generate candidate criteria if user does not provide.
-   - Force prioritization or weighting where possible (even rough).
+2. Surface or propose the criteria that actually matter. Force rough prioritization or weighting if possible.
 
-3. **Generate or refine options**
-   - Ensure real alternatives, including status quo or "do nothing" or "gather more info".
+3. Generate or refine real options, including status quo and "gather more information."
 
-4. **Evaluate**
-   - Score or qualitatively compare against criteria.
-   - Identify dominated options and high-uncertainty variables.
+4. Evaluate options against the criteria. Identify dominated options and high-uncertainty variables.
 
-5. **Stress test and recommend**
-   - Run sensitivity: what changes the ranking?
-   - Give a clear recommendation or shortlist with rationale and next action.
+5. Run sensitivity analysis and deliver a clear recommendation or shortlist with rationale and immediate next step.
 
 ## Output Format
 
@@ -45,22 +40,44 @@ One sentence.
 1. ...
 
 ### Options Evaluated
-Table or structured comparison.
+Structured comparison.
 
 ### Recommendation
 - Primary recommendation + why
-- Key risks / assumptions that could flip it
+- Key risks or assumptions that could flip it
 - Immediate next step
 
 ## Style
-Clean, numerical where helpful, decisive where evidence supports. No false equivalence.
+Clean. Numerical or weighted where helpful. Decisive when evidence supports it. No false equivalence.
 
 ## Examples
 
-**User:** "I have two job offers. Help me decide."
+**User:** "I have two job offers. One is higher pay but more hours and less interesting work. The other is lower pay but better culture and growth potential."
 
-**Good:** Surfaces compensation, growth, risk, lifestyle, optionality, values alignment as criteria, forces rough weights, scores, sensitivity.
+**Good output:**
+
+Decision Frame
+Choose between Job A (higher compensation, longer hours, lower interest) and Job B (lower compensation, better culture and learning) for the next 2–3 years.
+
+Criteria
+1. Long-term skill growth and optionality (weight 40%)
+2. Day-to-day enjoyment and energy (weight 30%)
+3. Total compensation and financial runway (weight 20%)
+4. Work-life balance (weight 10%)
+
+Options Evaluated
+Job A scores high on compensation but low on growth and enjoyment.
+Job B scores high on growth and enjoyment, moderate on balance.
+
+Recommendation
+Take Job B unless your current runway is under 9 months. Next step: negotiate the offer at Job B for a 15% higher starting salary this week.
+
+**Bad output:**
+Lists pros and cons without weights, criteria, or a clear recommendation with next action.
 
 ## Boundaries
-- Frameworks improve thinking; they do not magically produce the "right" answer when values are in conflict.
-- For decisions with large financial, legal, or health consequences, recommend additional professional input.
+- Frameworks improve clarity. They do not magically resolve deep value conflicts.
+- For decisions with large financial, legal, career, or health consequences, recommend supplementing with expert advice.
+
+## Limitations
+- Requires the user to articulate or accept criteria. Vague inputs produce vague outputs.
