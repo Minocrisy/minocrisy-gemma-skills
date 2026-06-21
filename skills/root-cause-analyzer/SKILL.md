@@ -1,88 +1,73 @@
 ---
 name: root-cause-analyzer
 description: Move past symptoms to identify the underlying systemic or structural causes of a problem, failure, or undesirable outcome. Use for diagnosis of recurring issues or complex failures.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Root Cause Analyzer
 
 ## Role
-You do not accept surface explanations. Keep asking until the causal chain leads to something actionable at the root.
+You identify the real systemic causes behind recurring problems instead of accepting surface explanations.
 
 ## Activation Conditions
-Use when the user:
-- Describes a recurring problem or failure and wants to know why it keeps happening
-- Asks "Why did this happen?" or "How do we stop this recurring?"
-- Has tried symptom-level fixes that didn't work
+Use this when the user describes:
+- A problem that keeps happening ("launches always slip", "this issue comes up again and again")
+- Wants to understand why something fails repeatedly ("Why do our launches keep missing deadlines?" or "How do we stop this recurring?")
+- Has tried fixes that only addressed symptoms
 
 Do not use for:
-- One-off tactical troubleshooting
-- Assigning personal blame
+- One-off problems or simple troubleshooting
+- Questions about a single past event
 
 ## Instructions
 
-1. Define the observable problem in specific, time-bounded terms.
+1. Clearly define the recurring problem in specific terms.
 
-2. Apply structured causal analysis (5 Whys style) but stop at the level explaining the pattern.
+2. Trace the causes step by step until you reach the root systemic issue (not just the immediate symptom).
 
-3. Distinguish special causes from common/systemic ones. Map factors at process, incentive, knowledge, tooling, and environment levels.
+3. Distinguish between one-time causes and recurring patterns (incentives, processes, missing feedback loops).
 
-4. Test each proposed root: if only this were fixed, would the problem reliably reduce?
-
-5. Focus on causes that can actually be influenced.
+4. Suggest high-leverage interventions that address the root.
 
 ## Output Format
 
-### Problem Definition
-Precise description.
+### Problem
+Brief description of the recurring issue.
 
-### Causal Chain
+### Root Causes
 1. Symptom
    - Why
-2. ...
-   - Root
+   ...
+   - Systemic root
 
-### High-Impact Root Causes
-- With logic for why this level is causal
-
-### Leverage Interventions
-- Changes that address the root rather than symptoms
-
-## Style
-Relentless but clean. No blame language unless the cause is a specific repeated decision.
+### Interventions
+- Specific changes that would prevent recurrence.
 
 ## Examples
 
-**User (engineering manager at 30-person company):** "Our launches always slip by 3-6 weeks no matter how much we plan ahead."
+**User:** "Our product launches always slip by several weeks no matter how carefully we plan."
 
 **Good output:**
 
-Problem Definition
-The last four launches all missed the committed date by 3–6 weeks.
+Problem
+Product launches repeatedly miss committed dates by 3-6 weeks.
 
-Causal Chain
-Symptom: Tasks finish late.
-- Why: Estimates ignored integration and review time.
-- Why: No historical accuracy data was used in planning.
-- Why: Team is rewarded for aggressive dates, not accurate ones.
+Root Causes
+- Estimates do not account for integration and review work.
+- No process to use historical accuracy data when planning.
+- Team is incentivized to set aggressive dates rather than realistic ones (root).
 
-High-Impact Root Causes
-- Incentive system rewards optimistic commitments.
-- No post-launch review process to improve future estimates.
-
-Leverage Interventions
-- Require historical accuracy data from the last 3 launches when setting dates.
-- Add a mandatory 20% buffer on all launch plans.
+Interventions
+- Require using data from the last 3 launches when setting dates.
+- Add mandatory buffer based on past slippage.
+- Change review process so dates are set by someone measured on accuracy, not speed.
 
 **Bad output:**
-Generic list like "underestimated scope" without tracing to systemic causes or giving specific interventions.
+Just says "underestimated the work" or lists symptoms without identifying the incentive or process root.
 
 ## Boundaries
-- Multiple independent root causes are common. Do not force a single root.
-- Analysis without action is wasted effort. Always end with interventions.
+- Focus on systemic causes, not blaming individuals.
+- End with actionable interventions.
 
 ## Limitations
-- Requires honest description of actual processes and incentives. Defensive answers produce shallow analysis.
-
-## Philosophy
-Root cause analysis without follow-through is just intellectual exercise.
+- Works best when the user can describe the actual process and incentives honestly.
