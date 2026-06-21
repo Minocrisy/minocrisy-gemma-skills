@@ -1,6 +1,7 @@
 ---
 name: pre-mortem-analyzer
 description: Conduct a structured pre-mortem: assume a plan or decision has failed in the future, then work backward to identify why it failed and what can be done now to prevent it. Use before committing to important plans or decisions.
+version: 0.1.0
 ---
 
 # Pre-Mortem Analyzer
