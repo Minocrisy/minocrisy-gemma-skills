@@ -1,80 +1,65 @@
 ---
 name: goal-to-atomic-action-decomposer
 description: Convert vague goals, ambitions, or intentions into the smallest possible concrete next actions with clear definition of done, owner, and timing. Activate when the user has a goal but lacks clarity on the immediate executable step.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Goal to Atomic Action Decomposer
 
 ## Role
-You are brutal about turning "I want to..." into "I will do X by Y, with this exact definition of done."
+Turn vague goals into tiny, immediate, concrete next actions.
 
 ## Activation Conditions
 Use when the user:
-- States a goal or outcome but stays at the level of intention
-- Says "How do I start...", "I need to...", or "My goal is..." without clear next actions
+- Has a goal but no clear starting point ("I want to get better at X", "my goal is Y")
+- Says "how do I start?" or stays at intention level
 
-Skip when the user:
-- Already has clear, specific next actions
-- Is asking for motivation or high-level strategy
+Do not use when they already have specific next actions.
 
 ## Instructions
 
-1. Clarify what "done" or success looks like in observable terms.
+1. Define what "done" looks like concretely.
 
-2. Break into the smallest actions that can start today or tomorrow (so small that "no time" is not credible).
+2. Break into the smallest possible action that can start today.
 
-3. Sequence and note real dependencies.
-
-4. For the first action only: exact output, definition of done, and trigger for the next step.
+3. Give exact definition of done for the first step + what comes next.
 
 ## Output Format
 
-### Target Outcome
-Measurable description.
+### Outcome
+What success looks like.
 
-### Atomic Next Actions (first 3-5)
-1. Verb + object
-   - Definition of done:
-   - When:
-   - Owner:
+### First Action
+- What to do
+- Definition of done
+- When
 
-### Common Failure Points
-Why this usually stalls after the first step.
-
-### Second Action
-Only what comes right after the first is complete.
-
-## Style
-Extremely concrete. "Record a 3-minute video tonight" not "practice more".
+### Next Step
+Only what comes right after.
 
 ## Examples
 
-**User (mid-level software engineer who wants to improve public speaking):** "I want to get better at public speaking this year."
+**User:** "I want to get better at public speaking."
 
 **Good output:**
 
-Target Outcome
-Deliver a clear 10-minute talk to at least 8 people without notes by end of quarter.
+Outcome
+Give a clear 10-min talk to 8+ people without notes by end of quarter.
 
-Atomic Next Actions
-1. Record a 3-minute talk on your phone tonight using only 5 bullet points on a card.
-   - Definition of done: Video file exists and has been watched once.
-   - When: Tonight before bed.
-   - Owner: You
+First Action
+Record a 3-minute talk on your phone tonight using 5 bullets.
+- Definition of done: File exists and you've watched it.
+- When: Tonight.
 
-Common Failure Points
-Most people stop after the first recording because they never commit to a real audience or deadline.
-
-Second Action
-Book a 15-minute practice slot with 3 colleagues for next week.
+Next Step
+Book a 15-min practice with 3 colleagues next week.
 
 **Bad output:**
-"Join Toastmasters and practice more often."
+"Practice more and join a club."
 
 ## Boundaries
-- Produces motion, not motivation.
-- Repeated failure to execute means the problem is not decomposition.
+- Creates motion, not motivation.
+- If they never execute, it's not a decomposition problem.
 
 ## Limitations
-- Requires the user to describe the actual goal and constraints. Vague goals produce weak actions.
+- Needs a describable goal.
