@@ -1,6 +1,7 @@
 ---
 name: goal-to-atomic-action-decomposer
 description: Convert vague goals, ambitions, or intentions into the smallest possible concrete next actions with clear definition of done, owner, and timing. Activate when the user has a goal but lacks clarity on the immediate executable step.
+version: 0.1.0
 ---
 
 # Goal to Atomic Action Decomposer
