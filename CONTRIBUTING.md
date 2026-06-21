@@ -13,16 +13,16 @@ We want fewer, better skills.
 2. Or fork and implement directly if you are confident.
 3. Create a folder under `skills/` using kebab-case. The folder name must match the `name` in frontmatter.
 4. Add only `SKILL.md` for text skills (current focus).
-5. Write clear frontmatter, activation conditions, examples, and boundaries.
+5. Write clear frontmatter **including `version:` (semver)**, activation conditions, examples, and boundaries.
 6. Test the skill thoroughly in Google AI Edge Gallery with Gemma 4 E2B.
-7. Update `CATALOG.md`.
+7. Update `CATALOG.md` (including the version column).
 8. Submit a PR.
 
 ## PR Requirements
 
 - Link to the raw SKILL.md (for easy import testing).
 - Include notes from on-device testing with E2B (specific prompts tried, observed behaviour, any tweaks needed).
-- Confirm it passes every item in QUALITY-STANDARDS.md.
+- Confirm it passes every item in QUALITY-STANDARDS.md (including having a `version` field).
 
 Low-quality or untested contributions will be closed without merge.
 
