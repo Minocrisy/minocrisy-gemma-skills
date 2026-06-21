@@ -1,80 +1,74 @@
 ---
 name: skill-update-reminder
 description: Helps users understand how to update skills from this repo when newer versions are released.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Skill Update Reminder
 
 ## Role
-You explain how to update skills from this repository. Google AI Edge Gallery caches skills locally after import via URL.
+You help users keep their skills up to date by explaining the manual update process clearly and practically.
 
 ## Activation Conditions
-Activate when the user asks about:
-- Getting the latest version of a skill from this repo
-- Updating or refreshing a skill
-- "How do I update the pre-mortem skill?" or "is there a new version?"
+Use when the user asks:
+- How to get the latest version of a skill
+- How to update or refresh skills from this repo
+- "Is there a new version?" or "my skill seems outdated"
 
-Do not activate for:
-- Requests to write or create skills
-- Using skills for reasoning or planning
-- General questions about the Gallery app
+Do not use for:
+- Creating or writing new skills
+- General questions about using the skills
 
 ## Instructions
 
-1. State the limitation directly: The app downloads the SKILL.md and caches it locally. There are no automatic updates.
+1. Explain that Google AI Edge Gallery caches skills locally after import. There is no auto-update.
 
-2. Give the exact steps:
-   - Remove the old skill from the Agent Skills list.
-   - Re-add it using the identical raw GitHub URL.
+2. Give the simple steps:
+   - Remove the old skill in the app's Agent Skills section.
+   - Re-add it using the raw URL from the repo.
 
-3. Tell the user to verify the version in the raw SKILL.md `version:` field or in CATALOG.md.
+3. Tell them to check the version in the raw file or CATALOG.md.
 
-4. Direct them to https://github.com/Minocrisy/minocrisy-gemma-skills for current versions.
-
-All skills use semantic versioning.
+4. Point to the repo for the latest: https://github.com/Minocrisy/minocrisy-gemma-skills
 
 ## Output Format
 
-### The Caching Problem
-One clear sentence.
+### Why It Needs Manual Update
+Short explanation of local caching.
 
-### How to Update
-Numbered steps.
+### Exact Steps
+1. Remove...
+2. Re-add from URL...
 
-### Verify Version
-Where to check.
+### Check Version
+How to confirm you have the new one.
 
-### Source
-Repo link.
+### Latest Source
+Link to repo.
 
 ## Examples
 
-**User (regular user of several skills from this repo):** "How do I get the newest version of first-principles-decomposer?"
+**User:** "How do I update the first-principles skill to the newest version?"
 
 **Good output:**
 
-The Caching Problem
-Google AI Edge Gallery caches the skill locally after import from a URL. There are no automatic updates.
+Why It Needs Manual Update
+The app caches the skill file locally when you import it. New versions on GitHub won't appear automatically.
 
-How to Update
-1. Remove the current first-principles-decomposer skill in the app.
-2. Re-add using this exact URL: https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/first-principles-decomposer/SKILL.md
+Exact Steps
+1. In Agent Skills, find and remove the old first-principles-decomposer skill.
+2. Add a new custom skill using this URL:
+   https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/first-principles-decomposer/SKILL.md
 
-Verify Version
-Check the `version:` line in the raw file or the table in CATALOG.md.
-
-**User:** "My skills feel outdated. Is there an auto-update?"
-
-**Good output:**
-No. Remove each old skill and re-import from the same raw URL. Check CATALOG.md for the current version numbers.
+Check Version
+Look at the `version:` line at the top of the raw file or the version in CATALOG.md.
 
 **Bad output:**
-Long explanation involving git clones or writing custom scripts.
+Long technical explanation or telling them to git clone the repo.
 
 ## Boundaries
-- Provides instructions only. Cannot fetch files or modify the app.
-- Manual action by the user is always required.
+- You only provide instructions. You cannot push updates.
+- The user must remove and re-add the skill themselves.
 
 ## Limitations
-- Only useful if the user is willing to remove and re-add skills. Some users find the manual step annoying.
+- Requires the user to be comfortable removing and re-adding skills in the app.
