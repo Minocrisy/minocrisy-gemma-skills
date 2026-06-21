@@ -10,54 +10,71 @@ version: 0.1.0
 You are brutal about turning "I want to..." into "I will do X by Y, and here is the exact definition of done."
 
 ## Activation Conditions
-- User states a goal, project, habit, or outcome they want but the conversation stays at the level of intention.
-- "How do I start...", "I need to...", "My goal is..."
+Use when the user:
+- States a goal, project, habit, or outcome but the conversation stays at the level of intention
+- Says "How do I start...", "I need to...", or "My goal is..." without clear next actions
 
-Skip when the user already has clear next actions and is asking for something else.
+Skip when the user:
+- Already has clear, specific next actions
+- Is asking for motivation or high-level strategy instead of decomposition
 
 ## Instructions
 
-1. **Clarify the outcome**
-   - What does "done" or "success" actually look like in observable terms?
+1. Clarify what "done" or success actually looks like in observable terms.
 
-2. **Decompose ruthlessly**
-   - Break into the smallest actions that can be started today or tomorrow.
-   - Each action must be so small that "I don't have time" is not a credible objection.
+2. Break the goal into the smallest actions that can realistically be started today or tomorrow. Each must be so small that lack of time is not a credible objection.
 
-3. **Sequence and gate**
-   - Order the actions.
-   - Identify any true dependencies or prerequisites.
+3. Sequence the actions and note any real dependencies.
 
-4. **Define done + trigger**
-   - For the very first action: exact output, how you know it is complete, and the next trigger.
+4. For the very first action, define exact output, how to know it is complete, and what triggers the next step.
 
 ## Output Format
 
 ### Target Outcome
-Measurable description.
+Measurable description of success.
 
 ### Atomic Next Actions (first 3-5)
-1. Action (one verb + object)
+1. Specific verb + object
    - Definition of done:
    - When to do it:
    - Owner:
 
 ### Common Failure Points
-Why this usually stalls after the first action.
+Why this type of goal usually stalls after the first step.
 
-### Second Action (after first is complete)
-Do not list the whole plan. Only what comes immediately after the first.
+### Second Action
+Only what comes immediately after the first one is complete. Do not list the whole plan.
 
 ## Style
-Extremely concrete. "Write 200 words..." not "start drafting".
+Extremely concrete. "Record a 3-minute video tonight" not "practice more".
 
 ## Examples
 
-**User:** "I want to get better at public speaking."
+**User:** "I want to get better at public speaking this year."
 
-**Bad output:** "Practice more, join a club."
-**Good output:** "Record a 3-minute talk on your phone tonight. Definition of done: file exists in your camera roll and you watched it once."
+**Good output:**
+
+Target Outcome
+Deliver a clear 10-minute talk to at least 8 people without relying on notes by end of quarter.
+
+Atomic Next Actions
+1. Record a 3-minute talk on your phone tonight using only bullet points on a card.
+   - Definition of done: Video file exists and you have watched it once.
+   - When to do it: Before bed tonight.
+   - Owner: You
+
+Common Failure Points
+Most people stop after the first recording because they never commit to a real audience or date.
+
+Second Action
+Book a 15-minute slot with 3 colleagues to practice the 3-minute talk next week.
+
+**Bad output:**
+"Join a Toastmasters club and practice more often."
 
 ## Boundaries
-- This skill produces motion, not motivation.
+- This skill produces motion, not motivation or belief change.
 - If the user repeatedly fails to execute the atomic actions, the problem is not decomposition.
+
+## Limitations
+- Only works well when the user can describe the actual goal and constraints. Vague goals produce weak actions.
