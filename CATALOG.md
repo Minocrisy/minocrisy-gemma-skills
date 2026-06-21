@@ -14,6 +14,7 @@ All skills use semantic versioning. Users should check the repository for newer 
 | Root Cause Analyzer | `root-cause-analyzer` | 0.1.1 | Text | Moves past symptoms to identify underlying systemic causes of problems. | Shipped |
 | Goal to Atomic Action Decomposer | `goal-to-atomic-action-decomposer` | 0.1.1 | Text | Converts vague goals and intentions into concrete, smallest possible next actions with clear ownership and timing. | Shipped |
 | Skill Update Reminder | `skill-update-reminder` | 0.1.1 | Text | Helps users understand how to update skills from this repo when newer versions are released. | Shipped |
+| Skill Architect | `skill-architect` | 0.1.0 | Text | Creates new skills or modifies existing ones while strictly following minocrisy-gemma-skills quality standards. | Shipped |
 
 **Status legend**
 
