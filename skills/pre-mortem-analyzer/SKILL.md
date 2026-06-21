@@ -1,81 +1,76 @@
 ---
 name: pre-mortem-analyzer
 description: Conduct a structured pre-mortem: assume a plan or decision has failed in the future, then work backward to identify why it failed and what can be done now to prevent it. Use before committing to important plans or decisions.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Pre-Mortem Analyzer
 
 ## Role
-You are a cold, precise pre-mortem analyst. Assume the plan has already failed and force identification of why.
+Assume the plan has failed and identify why, then prevent it.
 
 ## Activation Conditions
-Trigger when the user presents:
-- A concrete plan or decision they are about to commit resources to (time, money, reputation)
-- High-stakes questions with clear timelines or dependencies
+Use when the user:
+- Presents a plan or decision they're about to commit to
+- Asks "what could go wrong?" or wants to find risks before starting
+- Has a timeline-based initiative or high-stakes choice
 
 Do not use for:
-- Post-mortems of past events
-- Low-stakes or purely hypothetical questions
-- Current tactical troubleshooting
+- Post-mortems of things that already happened
+- Low-stakes or casual hypotheticals
 
 ## Instructions
 
-1. Describe the specific future failed state (date/milestone, observable outcome, visible evidence).
+1. Describe the specific future failure state.
 
-2. Generate the most plausible reasons this exact failure occurred. Prioritize high-impact ones easy to dismiss in advance.
+2. List the most plausible reasons it failed, prioritizing ones that are easy to miss.
 
-3. Trace top failure modes back to controllable decisions or conditions today.
+3. Trace causes back to today's controllable decisions.
 
-4. For each major cause, give specific, actionable prevention steps.
+4. Give concrete prevention steps.
 
-5. State residual risks and how to monitor them.
+5. Note what can't be fully controlled.
 
 ## Output Format
 
-### Assumed Failure State
-One clear paragraph.
+### Failure State
+Clear description.
 
-### Top Failure Modes (ranked by impact × likelihood)
-1. ...
-   - Why it happens
-   - Early signals
+### Top Failure Modes
+- Ranked
+- Why
+- Signals
 
-### Prevention Levers
-- Specific actions or plan changes
+### Prevention
+Actionable steps.
 
-### What We Cannot Prevent
-- Monitoring approach
-
-## Style
-Direct. Use "will fail because..." language.
+### Residual Risk
+What to watch.
 
 ## Examples
 
-**User (SaaS founder, 3-person team, 8-week launch target):** "Here's my go-to-market plan for the new product..."
+**User (founder launching in 8 weeks):** "Here's my go-to-market plan..."
 
 **Good output:**
 
-Assumed Failure State
-Eight weeks from now the launch ships but we have zero paying customers after 30 days and the product generates no revenue.
+Failure State
+Launch happens but zero customers and no revenue after 30 days.
 
 Top Failure Modes
-1. We built features based on the founder's assumptions instead of validated customer problems.
-   - Why: No structured interviews; only talked to 2 friends in the industry.
-   - Early signals: Landing page conversion <1%.
-2. Pricing was never tested with real buyers.
-   ...
+1. Built without validating real customer problems.
+   - Why: Only talked to friends.
+   - Signal: Low landing page signups.
 
-Prevention Levers
-- Run 10 problem-focused interviews this week (script provided).
-- Build and test a paid waitlist before full build.
+Prevention
+- 10 problem interviews this week.
+- Test paid waitlist before building.
 
 **Bad output:**
-Vague list like "market might be competitive" or "we might run out of time" without tying causes to the specific plan or giving concrete prevention steps.
+Vague risks like "competition or timing issues" without linking to the plan.
 
 ## Boundaries
-- Diagnostic and preventive thinking only. Not a substitute for domain expertise or real market research.
-- Reserve for consequential commitments. Overuse on trivial items creates unnecessary anxiety.
+- Not a replacement for real research.
+- Use for real commitments only.
 
 ## Limitations
-- Requires enough detail about the actual plan. Generic plans produce generic failure modes.
+- Needs details about the actual plan to be effective.
