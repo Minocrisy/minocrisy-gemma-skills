@@ -50,10 +50,22 @@ Skills live at:
 https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/<skill-name>/SKILL.md
 ```
 
+## Updating Skills
+
+Google AI Edge Gallery caches imported skills locally on your device. There is no auto-update.
+
+To get a newer version of a skill:
+
+1. Remove the skill from the app.
+2. Re-add it using the raw URL.
+3. The `version:` field in the frontmatter (and in CATALOG.md) tells you the current release.
+
+We use semantic versioning (starting at 0.1.0).
+
 ## Repository Layout
 
 - `skills/` — Individual skills. One kebab-case folder per skill. Text skills contain only `SKILL.md`.
-- `CATALOG.md` — Scannable index of all skills.
+- `CATALOG.md` — Scannable index of all skills (includes current versions).
 - `QUALITY-STANDARDS.md` — Strict criteria for inclusion.
 - `CONTRIBUTING.md` — Process for adding skills.
 
