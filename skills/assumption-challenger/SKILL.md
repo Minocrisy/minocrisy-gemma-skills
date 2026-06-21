@@ -1,79 +1,73 @@
 ---
 name: assumption-challenger
 description: Surface and rigorously challenge the hidden assumptions in a user's thinking, plan, analysis, or goal. Activate whenever a user presents reasoning that appears to rest on unexamined premises.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Assumption Challenger
 
 ## Role
-You surface the unstated assumptions that an entire argument or plan depends on.
+Find the unstated assumptions that a plan or conclusion depends on.
 
 ## Activation Conditions
-Trigger when the user:
-- Presents a non-trivial plan or analysis as ready to execute
-- Asks to examine their reasoning ("walk me through this" or "why do you believe X?")
-- Has a conclusion that would collapse if one key premise proved false
+Use when the user:
+- Presents a plan or analysis as ready
+- Wants their reasoning examined ("walk me through why you think this" or "am I missing something?")
+- Has a belief that would fall apart if one premise is wrong
 
 Do not use for:
-- Simple factual questions
-- Low-stakes brainstorming
-- When the user wants help defending a position
+- Simple facts or low-stakes ideas
+- When they want support defending a position
 
 ## Instructions
 
-1. List the assumptions you infer from the user's statements. Categorize them.
+1. List the assumptions you're inferring.
 
-2. Test each: how falsifiable is it? What evidence would disprove it?
+2. Test how solid each one is and what would disprove it.
 
-3. Highlight the dangerous ones (load-bearing + weakly supported).
+3. Flag the dangerous ones (important + weakly supported).
 
-4. Suggest cheap, concrete validation steps.
+4. Suggest easy ways to test them.
 
 ## Output Format
 
-### Inferred Assumptions
-- Bullet list with categories.
+### Assumptions
+Categorized list.
 
-### Load-Bearing Weak Assumptions
-Prioritized.
+### Weak Spots
+The risky ones.
 
-### Consequences if Wrong
-Impact on the plan for top items.
+### What Happens If Wrong
+Consequences.
 
-### Validation Steps
-Concrete, low-cost actions.
-
-## Style
-Precise. "You are assuming that..."
+### Quick Tests
+Low-effort validation steps.
 
 ## Examples
 
-**User (engineering lead at 20-person SaaS):** "We're launching this feature in Q3 because the competitor announced something similar and we can't fall behind."
+**User:** "We're launching this feature in Q3 because the competitor did and we can't fall behind."
 
 **Good output:**
 
-Inferred Assumptions
-- World: Customers will switch based on this type of feature (about the world).
-- Capabilities: We can ship a competitive version on time without major quality issues (about capabilities).
-- Timing: Launching later than the competitor will cause meaningful market share loss (about timing).
+Assumptions
+- Customers will switch for this feature.
+- We can ship something competitive on time.
+- Being late will cost us real market share.
 
-Load-Bearing Weak Assumptions
-- Customers actually value and will pay for this feature category (no data cited).
+Weak Spots
+Customer value for this feature is assumed, not tested.
 
-Consequences if Wrong
-We burn 6+ engineer-weeks on something that does not move revenue or retention while core reliability work slips.
+Consequences
+Wasted engineering time on something that doesn't move the needle.
 
-Validation Steps
-- 8 customer interviews this week focused only on the problem (not the feature).
-- Review last 20 win/loss calls for any mention of this category.
+Quick Tests
+Interview 8 customers about the problem this week. Review recent win/loss data.
 
 **Bad output:**
-"Good point — we should probably check timing too."
+Just says "timing might be an issue" without surfacing the hidden assumptions.
 
 ## Boundaries
-- Distinguish between assumptions that must be validated now vs acceptable bets.
-- This structures questions. It does not generate external data.
+- Some assumptions are acceptable bets. Distinguish must-validate from okay-to-assume.
 
 ## Limitations
-- Requires the user to share their actual reasoning. Thin context produces weak challenges.
+- Needs the user to share their reasoning.
