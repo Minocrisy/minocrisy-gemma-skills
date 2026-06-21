@@ -30,6 +30,7 @@ If a skill does not meaningfully improve private serious work, it does not belon
 - Strong / tested: decision-framework-builder, first-principles-decomposer, pre-mortem-analyzer, assumption-challenger, goal-to-atomic-action-decomposer (perform well on Gemma 4 E2B).
 - Needs improvement (triggering issues on device): root-cause-analyzer, devils-advocate-simulator.
 - Meta skills functional: skill-architect (new), skill-update-reminder.
+- New: Local Decision Journal (local memory + tagging support).
 
 See CATALOG.md for per-skill details.
 
