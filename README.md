@@ -55,6 +55,10 @@ See [CATALOG.md](CATALOG.md) for per-skill details.
 | 📓 [Local Decision Journal](skills/local-decision-journal/SKILL.md) | Capture & retrieve decisions over time | Tagging + date range + AND/OR search |
 | 🏗️ [Skill Architect](skills/skill-architect/SKILL.md) | Create or improve skills | Enforces repo quality standards |
 
+<p align="center">
+  <img src="assets/local-decision-journal.svg" alt="Local Decision Journal illustration" width="300" />
+</p>
+
 ## Installation
 
 1. Open **Google AI Edge Gallery** on iOS or Android.
