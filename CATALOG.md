@@ -2,6 +2,8 @@
 
 All skills in this repository.
 
+All skills use semantic versioning. Users should check the repository for newer versions before re-importing.
+
 | Skill | Folder | Version | Type | Description | Status |
 |-------|--------|---------|------|-------------|--------|
 | First Principles Decomposer | `first-principles-decomposer` | 0.1.0 | Text | Breaks complex problems down to fundamental truths and axioms before building back up. | Shipped |
@@ -11,6 +13,7 @@ All skills in this repository.
 | Decision Framework Builder | `decision-framework-builder` | 0.1.0 | Text | Applies structured decision frameworks (criteria, weighting, scenarios, trade-off analysis) to important choices. | Shipped |
 | Root Cause Analyzer | `root-cause-analyzer` | 0.1.0 | Text | Moves past symptoms to identify underlying systemic causes of problems. | Shipped |
 | Goal to Atomic Action Decomposer | `goal-to-atomic-action-decomposer` | 0.1.0 | Text | Converts vague goals and intentions into concrete, smallest possible next actions with clear ownership and timing. | Shipped |
+| Skill Update Reminder | `skill-update-reminder` | 0.1.0 | Text | Helps users understand how to update skills from this repo when newer versions are released. | Shipped |
 
 **Status legend**
 
