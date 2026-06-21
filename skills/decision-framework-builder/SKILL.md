@@ -1,6 +1,7 @@
 ---
 name: decision-framework-builder
 description: Apply structured decision frameworks to important choices. Clarify criteria, surface options, evaluate trade-offs, and produce a defensible recommendation or ranked set of options. Use for high-stakes or multi-factor decisions.
+version: 0.1.0
 ---
 
 # Decision Framework Builder
