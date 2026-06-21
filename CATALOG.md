@@ -15,6 +15,7 @@ All skills use semantic versioning. Users should check the repository for newer 
 | Goal to Atomic Action Decomposer | `goal-to-atomic-action-decomposer` | 0.1.1 | Text | Converts vague goals and intentions into concrete, smallest possible next actions with clear ownership and timing. | Shipped - Tested & Validated |
 | Skill Update Reminder | `skill-update-reminder` | 0.1.1 | Text | Helps users understand how to update skills from this repo when newer versions are released. | Shipped |
 | Skill Architect | `skill-architect` | 0.1.0 | Text | Creates new skills or modifies existing ones while strictly following minocrisy-gemma-skills quality standards. | Shipped |
+| Local Decision Journal | `local-decision-journal` | 0.1.0 | Text | Save and retrieve important decisions with tagging, multi-tag search, and date range filtering. | Shipped |
 
 **Status legend**
 
