@@ -1,10 +1,17 @@
 # minocrisy-gemma-skills
 
-High-signal Agent Skills for Gemma 4 E2B in Google AI Edge Gallery.
+> **High-signal Agent Skills for Gemma 4 E2B** — Private, offline tools for serious thinking.
 
-**Initial device testing round complete (Gemma 4 E2B).**
+[![Gemma 4 E2B](https://img.shields.io/badge/Gemma_4-E2B-4285F4?style=flat&logo=google)](https://ai.google.dev/gemma)
+[![Text Skills](https://img.shields.io/badge/Type-Text_Only-34A853?style=flat)](https://github.com/Minocrisy/minocrisy-gemma-skills)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](LICENSE)
+[![Tested](https://img.shields.io/badge/Tested-Gemma_4_E2B-brightgreen?style=flat)](CATALOG.md)
 
 Private, offline cognitive tools for people who already have strong cloud models (Grok, Gemini, Claude, etc.) and want sharp, reliable thinking tools that never leave the device.
+
+<p align="center">
+  <strong>Built for truth-seeking. Designed for real work.</strong>
+</p>
 
 ## The Point
 
@@ -16,73 +23,72 @@ This repo exists to provide exactly that: focused, truth-seeking skills for real
 
 ## Philosophy
 
-- Direct, not diplomatic. Minimal hedging.
-- High leverage over broad coverage.
-- High signal-to-noise. No corporate language, no motivational fluff.
-- Progressive disclosure: the model sees only name + description until the skill is relevant.
-- Designed to complement cloud tools, not replace them.
+- **Direct, not diplomatic.** Minimal hedging.
+- **High leverage** over broad coverage.
+- **High signal-to-noise.** No corporate language, no motivational fluff.
+- **Progressive disclosure:** the model sees only name + description until the skill is relevant.
+- Designed to **complement** cloud tools, not replace them.
 - Tested on actual hardware with Gemma 4 E2B before shipping.
 
 If a skill does not meaningfully improve private serious work, it does not belong here.
 
 ## Current Status
 
-- Strong / tested: decision-framework-builder, first-principles-decomposer, pre-mortem-analyzer, assumption-challenger, goal-to-atomic-action-decomposer (perform well on Gemma 4 E2B).
-- Needs improvement (triggering issues on device): root-cause-analyzer, devils-advocate-simulator.
-- Meta skills functional: skill-architect (new), skill-update-reminder.
-- New: Local Decision Journal (local memory + tagging support).
+- **Strong / tested on device:** decision-framework-builder, first-principles-decomposer, pre-mortem-analyzer, assumption-challenger, goal-to-atomic-action-decomposer
+- **Needs improvement (triggering):** root-cause-analyzer, devils-advocate-simulator
+- **Meta skills:** skill-architect (new), skill-update-reminder
+- **New:** Local Decision Journal — local memory + tagging, multi-tag search, and date range filtering
 
-See CATALOG.md for per-skill details.
+See [CATALOG.md](CATALOG.md) for per-skill details and status.
 
-## Initial Skills
+## Featured Skills
 
-The first batch focuses on core reasoning and decision tools:
-
-- [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md)
-- [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md)
-- [Devil’s Advocate Simulator](skills/devils-advocate-simulator/SKILL.md)
-- [Assumption Challenger](skills/assumption-challenger/SKILL.md)
-- [Decision Framework Builder](skills/decision-framework-builder/SKILL.md)
-- [Root Cause Analyzer](skills/root-cause-analyzer/SKILL.md)
-- [Goal to Atomic Action Decomposer](skills/goal-to-atomic-action-decomposer/SKILL.md)
-
-See [CATALOG.md](CATALOG.md) for the full list and status. The Skill Architect meta-skill creates and improves skills while strictly enforcing these quality standards.
+| Skill | Use Case | Key Feature |\n|-------|----------|-------------|\n| [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md) | Break down complex problems to fundamentals | Strong for high-stakes analysis |
+| [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md) | Identify risks before committing | Prospective failure simulation |
+| [Decision Framework Builder](skills/decision-framework-builder/SKILL.md) | Structure important choices | Weighted criteria + sensitivity |
+| [Local Decision Journal](skills/local-decision-journal/SKILL.md) | Capture & retrieve decisions over time | Tagging + date range + AND/OR search |
+| [Skill Architect](skills/skill-architect/SKILL.md) | Create or improve skills | Enforces repo quality standards |
 
 ## Installation
 
-1. Open Google AI Edge Gallery on iOS or Android.
-2. Select the Agent Skills section.
-3. Tap to add a custom skill.
-4. Paste the raw URL to a `SKILL.md` file, or download the file and import locally.
-
-Skills live at:
+1. Open **Google AI Edge Gallery** on iOS or Android.
+2. Go to **Agent Skills**.
+3. Tap **+** to add a custom skill.
+4. Paste the raw URL:
 
 ```
 https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/<skill-name>/SKILL.md
 ```
 
+**Example for Local Decision Journal:**
+```
+https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/local-decision-journal/SKILL.md
+```
+
 ## Keeping Skills Updated
 
-Google AI Edge Gallery caches every skill locally after you import it from a URL. There are no automatic updates.
-
-To update:
+Google AI Edge Gallery caches skills locally. To get updates:
 
 1. Remove the old skill in the app.
-2. Re-add it using the same raw URL.
+2. Re-add using the same raw URL.
 
-Check the `version:` field in the raw SKILL.md or the table in CATALOG.md to confirm you have the current release. All skills use semantic versioning.
+Check the `version:` in the raw file or [CATALOG.md](CATALOG.md).
 
-See the Skill Update Reminder skill for in-app guidance.
+See the [Skill Update Reminder](skills/skill-update-reminder/SKILL.md) for in-app help.
 
 ## Repository Layout
 
-- `skills/` — Individual skills. One kebab-case folder per skill. Text skills contain only `SKILL.md`.
-- `CATALOG.md` — Scannable index of all skills (includes current versions).
-- `QUALITY-STANDARDS.md` — Strict criteria for inclusion.
-- `CONTRIBUTING.md` — Process for adding skills.
+- `skills/` — One kebab-case folder per skill (Text-only `SKILL.md`)
+- `CATALOG.md` — Full index with status & versions
+- `QUALITY-STANDARDS.md` — Strict rules for what ships
+- `CONTRIBUTING.md` — How to add high-quality skills
 
 ## License
 
-Apache-2.0
+Apache-2.0 — See [LICENSE](LICENSE).
 
-See [LICENSE](LICENSE).
+---
+
+<p align="center">
+  <sub>Truth-seeking tools. Zero fluff. Built for the edge.</sub>
+</p>
