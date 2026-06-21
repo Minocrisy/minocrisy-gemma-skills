@@ -1,6 +1,7 @@
 ---
 name: assumption-challenger
 description: Surface and rigorously challenge the hidden assumptions in a user's thinking, plan, analysis, or goal. Activate whenever a user presents reasoning that appears to rest on unexamined premises.
+version: 0.1.0
 ---
 
 # Assumption Challenger
