@@ -1,6 +1,7 @@
 ---
 name: devils-advocate-simulator
 description: Act as a rigorous, unsympathetic devil's advocate. Attack the user's current reasoning, plans, or conclusions with the strongest counterarguments, evidence, and alternative framings available. Use when seeking to pressure-test thinking.
+version: 0.1.0
 ---
 
 # Devil’s Advocate Simulator
