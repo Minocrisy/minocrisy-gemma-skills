@@ -1,83 +1,74 @@
 ---
 name: decision-framework-builder
 description: Apply structured decision frameworks to important choices. Clarify criteria, surface options, evaluate trade-offs, and produce a defensible recommendation or ranked set of options. Use for high-stakes or multi-factor decisions.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Decision Framework Builder
 
 ## Role
-You bring disciplined structure to decisions so the user stops relying on gut feel or incomplete lists.
+Bring structure to decisions instead of gut feel.
 
 ## Activation Conditions
-Use when the user faces:
-- A real choice with meaningful consequences
-- Multiple criteria or conflicting values
-- Uncertainty about the right path
+Use when the user:
+- Faces a real choice with consequences ("Should I take this job or that one?", "Which option?")
+- Has multiple factors or conflicting priorities
+- Wants a clear way to decide
 
-Skip for:
-- Trivial or single-criterion choices
-- Purely emotional decisions without practical trade-offs
+Do not use for:
+- Trivial choices
+- Purely emotional decisions
 
 ## Instructions
 
-1. Clarify the exact decision and time horizon.
+1. Clarify the decision and timeframe.
 
-2. Surface the criteria that matter. Force rough prioritization/weighting.
+2. List the criteria that matter and roughly weight them.
 
-3. Generate or refine real options, including status quo and "gather more info".
+3. Generate real options (including doing nothing).
 
-4. Evaluate options against criteria. Flag dominated options and high-uncertainty variables.
+4. Score or compare them against the criteria.
 
-5. Run sensitivity and give a clear recommendation or shortlist with rationale and next step.
+5. Run sensitivity and recommend with next step.
 
 ## Output Format
 
-### Decision Frame
+### Decision
 One sentence.
 
-### Criteria (weighted if possible)
-1. ...
+### Criteria
+Weighted list.
 
-### Options Evaluated
-Structured comparison.
+### Comparison
+How options score.
 
 ### Recommendation
-- Primary + why
-- Key risks/assumptions that could flip it
-- Immediate next step
-
-## Style
-Clean. Numerical where helpful. Decisive when supported. No false equivalence.
+Top choice + why + immediate next action.
 
 ## Examples
 
-**User (mid-level engineer with 2 young kids, 18 months runway):** "I have two job offers. Job A pays 30% more but requires 50+ hour weeks and relocation. Job B pays less but is fully remote with better culture and growth."
+**User (engineer with family):** "Job A pays more but long hours and relocation. Job B is remote with better culture."
 
 **Good output:**
 
-Decision Frame
-Choose between Job A (higher pay, high hours, relocation) and Job B (lower pay, remote, better culture/growth) for the next 2–3 years.
+Decision
+Choose between higher-pay/high-hours Job A and lower-pay/remote Job B.
 
 Criteria
-1. Long-term skill growth + optionality (weight 35%)
-2. Day-to-day energy and family time (weight 30%)
-3. Total compensation and financial security (weight 20%)
-4. Work-life balance (weight 15%)
-
-Options Evaluated
-Job A wins on compensation but loses heavily on balance and family impact.
-Job B wins on growth and lifestyle.
+1. Skill growth (35%)
+2. Family time/energy (30%)
+3. Pay/security (20%)
+4. Balance (15%)
 
 Recommendation
-Take Job B and negotiate a 12-15% higher offer this week. Only reconsider Job A if runway drops below 9 months.
+Take Job B and negotiate higher pay. Reconsider A only if runway <9 months.
 
 **Bad output:**
-A generic pros/cons list with no weights, no sensitivity, and no clear next step.
+Unweighted pros/cons list with no recommendation or next step.
 
 ## Boundaries
-- Improves clarity. Does not resolve deep value conflicts.
-- For large financial/career/health decisions, recommend expert input.
+- Helps clarity but doesn't solve value conflicts.
+- Big decisions may need expert input.
 
 ## Limitations
-- Requires the user to articulate or accept criteria. Vague inputs produce vague outputs.
+- Needs the user to define or accept criteria.
