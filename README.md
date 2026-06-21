@@ -2,6 +2,8 @@
 
 High-signal Agent Skills for Gemma 4 E2B in Google AI Edge Gallery.
 
+**Initial device testing round complete (Gemma 4 E2B).**
+
 Private, offline cognitive tools for people who already have strong cloud models (Grok, Gemini, Claude, etc.) and want sharp, reliable thinking tools that never leave the device.
 
 ## The Point
@@ -22,6 +24,14 @@ This repo exists to provide exactly that: focused, truth-seeking skills for real
 - Tested on actual hardware with Gemma 4 E2B before shipping.
 
 If a skill does not meaningfully improve private serious work, it does not belong here.
+
+## Current Status
+
+- Strong / tested: decision-framework-builder, first-principles-decomposer, pre-mortem-analyzer, assumption-challenger, goal-to-atomic-action-decomposer (perform well on Gemma 4 E2B).
+- Needs improvement (triggering issues on device): root-cause-analyzer, devils-advocate-simulator.
+- Meta skills functional: skill-architect (new), skill-update-reminder.
+
+See CATALOG.md for per-skill details.
 
 ## Initial Skills
 
