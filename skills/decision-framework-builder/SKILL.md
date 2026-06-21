@@ -11,25 +11,25 @@ You bring disciplined structure to decisions so the user stops relying on gut fe
 
 ## Activation Conditions
 Use when the user faces:
-- A real choice with meaningful consequences ("Should I...", "Which of these two...")
-- Multiple factors or values that matter
-- Uncertainty or conflicting priorities
+- A real choice with meaningful consequences
+- Multiple criteria or conflicting values
+- Uncertainty about the right path
 
 Skip for:
 - Trivial or single-criterion choices
-- Purely emotional or values-only decisions without practical trade-offs
+- Purely emotional decisions without practical trade-offs
 
 ## Instructions
 
-1. Clarify the exact decision and its time horizon.
+1. Clarify the exact decision and time horizon.
 
-2. Surface or propose the criteria that actually matter. Force rough prioritization or weighting if possible.
+2. Surface the criteria that matter. Force rough prioritization/weighting.
 
-3. Generate or refine real options, including status quo and "gather more information."
+3. Generate or refine real options, including status quo and "gather more info".
 
-4. Evaluate options against the criteria. Identify dominated options and high-uncertainty variables.
+4. Evaluate options against criteria. Flag dominated options and high-uncertainty variables.
 
-5. Run sensitivity analysis and deliver a clear recommendation or shortlist with rationale and immediate next step.
+5. Run sensitivity and give a clear recommendation or shortlist with rationale and next step.
 
 ## Output Format
 
@@ -43,41 +43,41 @@ One sentence.
 Structured comparison.
 
 ### Recommendation
-- Primary recommendation + why
-- Key risks or assumptions that could flip it
+- Primary + why
+- Key risks/assumptions that could flip it
 - Immediate next step
 
 ## Style
-Clean. Numerical or weighted where helpful. Decisive when evidence supports it. No false equivalence.
+Clean. Numerical where helpful. Decisive when supported. No false equivalence.
 
 ## Examples
 
-**User:** "I have two job offers. One is higher pay but more hours and less interesting work. The other is lower pay but better culture and growth potential."
+**User (mid-level engineer with 2 young kids, 18 months runway):** "I have two job offers. Job A pays 30% more but requires 50+ hour weeks and relocation. Job B pays less but is fully remote with better culture and growth."
 
 **Good output:**
 
 Decision Frame
-Choose between Job A (higher compensation, longer hours, lower interest) and Job B (lower compensation, better culture and learning) for the next 2–3 years.
+Choose between Job A (higher pay, high hours, relocation) and Job B (lower pay, remote, better culture/growth) for the next 2–3 years.
 
 Criteria
-1. Long-term skill growth and optionality (weight 40%)
-2. Day-to-day enjoyment and energy (weight 30%)
-3. Total compensation and financial runway (weight 20%)
-4. Work-life balance (weight 10%)
+1. Long-term skill growth + optionality (weight 35%)
+2. Day-to-day energy and family time (weight 30%)
+3. Total compensation and financial security (weight 20%)
+4. Work-life balance (weight 15%)
 
 Options Evaluated
-Job A scores high on compensation but low on growth and enjoyment.
-Job B scores high on growth and enjoyment, moderate on balance.
+Job A wins on compensation but loses heavily on balance and family impact.
+Job B wins on growth and lifestyle.
 
 Recommendation
-Take Job B unless your current runway is under 9 months. Next step: negotiate the offer at Job B for a 15% higher starting salary this week.
+Take Job B and negotiate a 12-15% higher offer this week. Only reconsider Job A if runway drops below 9 months.
 
 **Bad output:**
-Lists pros and cons without weights, criteria, or a clear recommendation with next action.
+A generic pros/cons list with no weights, no sensitivity, and no clear next step.
 
 ## Boundaries
-- Frameworks improve clarity. They do not magically resolve deep value conflicts.
-- For decisions with large financial, legal, career, or health consequences, recommend supplementing with expert advice.
+- Improves clarity. Does not resolve deep value conflicts.
+- For large financial/career/health decisions, recommend expert input.
 
 ## Limitations
 - Requires the user to articulate or accept criteria. Vague inputs produce vague outputs.
