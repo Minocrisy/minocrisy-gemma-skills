@@ -1,0 +1,11 @@
+# Heavy reference assets (logos, large images from Drive)
+assets/reference/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# OS / editor
+.DS_Store
+*.swp
+*~

@@ -1,17 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">minocrisy-gemma-skills</title>
+  <desc id="desc">High-signal Agent Skills for Gemma 4 E2B — Private, offline cognitive tools</desc>
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    <!-- Sophisticated dark gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e2937"/>
+    </linearGradient>
+    <!-- Accent gradient for subtle line -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#64748b" stop-opacity="0.6"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="300" fill="url(#grad)"/>
-  <text x="400" y="120" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#e0f2fe" text-anchor="middle">minocrisy-gemma-skills</text>
-  <text x="400" y="170" font-family="Arial, sans-serif" font-size="22" fill="#bae6fd" text-anchor="middle">High-Signal Agent Skills for Gemma 4 E2B</text>
-  <circle cx="200" cy="220" r="30" fill="#3b82f6" opacity="0.8"/>
-  <text x="200" y="228" font-family="Arial" font-size="18" fill="white" text-anchor="middle">🧠</text>
-  <circle cx="400" cy="220" r="30" fill="#10b981" opacity="0.8"/>
-  <text x="400" y="228" font-family="Arial" font-size="18" fill="white" text-anchor="middle">📓</text>
-  <circle cx="600" cy="220" r="30" fill="#8b5cf6" opacity="0.8"/>
-  <text x="600" y="228" font-family="Arial" font-size="18" fill="white" text-anchor="middle">🎯</text>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Subtle left structure marks (abstract nodes for reasoning tools) -->
+  <g opacity="0.25">
+    <circle cx="80" cy="100" r="4" fill="#64748b"/>
+    <circle cx="110" cy="130" r="3" fill="#64748b"/>
+    <circle cx="60" cy="150" r="3" fill="#64748b"/>
+    <line x1="80" y1="100" x2="110" y2="130" stroke="#64748b" stroke-width="1"/>
+    <line x1="80" y1="100" x2="60" y2="150" stroke="#64748b" stroke-width="1"/>
+    <circle cx="90" cy="180" r="2.5" fill="#64748b"/>
+    <line x1="60" y1="150" x2="90" y2="180" stroke="#64748b" stroke-width="1"/>
+  </g>
+
+  <!-- Subtle right structure marks -->
+  <g opacity="0.25">
+    <circle cx="1120" cy="100" r="4" fill="#64748b"/>
+    <circle cx="1090" cy="130" r="3" fill="#64748b"/>
+    <circle cx="1140" cy="150" r="3" fill="#64748b"/>
+    <line x1="1120" y1="100" x2="1090" y2="130" stroke="#64748b" stroke-width="1"/>
+    <line x1="1120" y1="100" x2="1140" y2="150" stroke="#64748b" stroke-width="1"/>
+    <circle cx="1110" cy="180" r="2.5" fill="#64748b"/>
+    <line x1="1140" y1="150" x2="1110" y2="180" stroke="#64748b" stroke-width="1"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="128" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="#f1f5f9" text-anchor="middle" letter-spacing="-0.02em">minocrisy-gemma-skills</text>
+
+  <!-- Tagline -->
+  <text x="600" y="168" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="400" fill="#94a3b8" text-anchor="middle">High-signal cognitive tools for private, on-device AI</text>
+
+  <!-- Accent divider line -->
+  <rect x="360" y="192" width="480" height="1.5" rx="1" fill="url(#accent)"/>
+
+  <!-- Subhead / positioning -->
+  <text x="600" y="225" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle" letter-spacing="0.05em">FOR GEMMA 4 E2B  •  GOOGLE AI EDGE GALLERY  •  OFFLINE &amp; PRIVATE</text>
+
+  <!-- Bottom branding -->
+  <text x="600" y="275" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">by Minocrisy</text>
 </svg>

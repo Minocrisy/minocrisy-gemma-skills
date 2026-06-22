@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Minocrisy gemma skills icon">
+  <defs>
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e2937"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer rounded container -->
+  <rect x="8" y="8" width="112" height="112" rx="22" fill="url(#iconBg)" stroke="#334155" stroke-width="4"/>
+  <!-- Central abstract node structure representing structured thinking -->
+  <g fill="#94a3b8">
+    <!-- Core node -->
+    <circle cx="64" cy="64" r="9" />
+    <!-- Surrounding nodes -->
+    <circle cx="40" cy="40" r="5" />
+    <circle cx="88" cy="40" r="5" />
+    <circle cx="40" cy="88" r="5" />
+    <circle cx="88" cy="88" r="5" />
+    <!-- Connecting lines -->
+    <g stroke="#64748b" stroke-width="2.5" stroke-linecap="round">
+      <line x1="47" y1="47" x2="58" y2="58"/>
+      <line x1="81" y1="47" x2="70" y2="58"/>
+      <line x1="47" y1="81" x2="58" y2="70"/>
+      <line x1="81" y1="81" x2="70" y2="70"/>
+    </g>
+  </g>
+</svg>

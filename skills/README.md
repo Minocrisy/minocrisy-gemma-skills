@@ -19,18 +19,18 @@ https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/<
 
 ### Current Skills
 
-| Skill | Primary Use Case | Tags |
-|-------|------------------|------|
-| [First Principles Decomposer](first-principles-decomposer/SKILL.md) | Break complex problems to fundamentals | #reasoning #analysis |
-| [Pre-Mortem Analyzer](pre-mortem-analyzer/SKILL.md) | Identify what could go wrong before committing | #risk #planning |
-| [Devil’s Advocate Simulator](devils-advocate-simulator/SKILL.md) | Pressure-test your reasoning | #challenge #bias |
-| [Assumption Challenger](assumption-challenger/SKILL.md) | Surface hidden assumptions | #critical-thinking |
-| [Decision Framework Builder](decision-framework-builder/SKILL.md) | Structure high-stakes choices | #decisions |
-| [Root Cause Analyzer](root-cause-analyzer/SKILL.md) | Find systemic causes of recurring problems | #diagnosis |
-| [Goal to Atomic Action Decomposer](goal-to-atomic-action-decomposer/SKILL.md) | Turn vague goals into tiny executable steps | #execution |
-| [Local Decision Journal](local-decision-journal/SKILL.md) | Capture & search decisions with tags + dates | #memory #journal |
-| [Skill Architect](skill-architect/SKILL.md) | Create & improve skills to repo standards | #meta |
-| [Skill Update Reminder](skill-update-reminder/SKILL.md) | Stay on latest versions | #maintenance |
+| Skill | Primary Use Case |
+|-------|------------------|
+| [First Principles Decomposer](first-principles-decomposer/SKILL.md) | Break complex problems to fundamentals |
+| [Pre-Mortem Analyzer](pre-mortem-analyzer/SKILL.md) | Identify what could go wrong before committing |
+| [Devil’s Advocate Simulator](devils-advocate-simulator/SKILL.md) | Pressure-test your reasoning |
+| [Assumption Challenger](assumption-challenger/SKILL.md) | Surface hidden assumptions |
+| [Decision Framework Builder](decision-framework-builder/SKILL.md) | Structure high-stakes choices |
+| [Root Cause Analyzer](root-cause-analyzer/SKILL.md) | Find systemic causes of recurring problems |
+| [Goal to Atomic Action Decomposer](goal-to-atomic-action-decomposer/SKILL.md) | Turn vague goals into tiny executable steps |
+| [Local Decision Journal](local-decision-journal/SKILL.md) | Capture & search decisions with tags + dates |
+| [Skill Architect](skill-architect/SKILL.md) | Create & improve skills to repo standards |
+| [Skill Update Reminder](skill-update-reminder/SKILL.md) | Stay on latest versions |
 
 See the root [CATALOG.md](../CATALOG.md) for full details, status, and versions.
 

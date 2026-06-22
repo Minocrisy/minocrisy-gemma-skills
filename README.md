@@ -1,29 +1,28 @@
 # minocrisy-gemma-skills
 
-> **High-signal Agent Skills for Gemma 4 E2B** — Private, offline tools for serious thinking.
-
 <p align="center">
-  <img src="assets/banner.svg" alt="minocrisy-gemma-skills banner" width="100%" />
+  <img src="assets/banner.svg" alt="minocrisy-gemma-skills — high-signal agent skills for Gemma 4 E2B" width="100%" />
 </p>
 
-[![Gemma 4 E2B](https://img.shields.io/badge/Gemma_4-E2B-4285F4?style=flat&logo=google)](https://ai.google.dev/gemma)
-[![Text Skills](https://img.shields.io/badge/Type-Text_Only-34A853?style=flat)](https://github.com/Minocrisy/minocrisy-gemma-skills)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](LICENSE)
-[![Tested](https://img.shields.io/badge/Tested-Gemma_4_E2B-brightgreen?style=flat)](CATALOG.md)
+> **Private, offline cognitive tools for serious thinking.**  
+> Precision instruments that activate on-device when you need them.
+
+<p align="center">
+  <a href="https://ai.google.dev/gemma"><img src="https://img.shields.io/badge/Gemma_4-E2B-4285F4?style=flat&logo=google" alt="Gemma 4 E2B"></a>
+  <img src="https://img.shields.io/badge/Type-Text_Only-475569?style=flat" alt="Text Only">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-475569?style=flat" alt="Apache 2.0"></a>
+  <a href="CATALOG.md"><img src="https://img.shields.io/badge/Status-Tested%20on%20E2B-166534?style=flat" alt="Tested on device"></a>
+</p>
 
 Private, offline cognitive tools for people who already have strong cloud models (Grok, Gemini, Claude, etc.) and want sharp, reliable thinking tools that never leave the device.
 
-<p align="center">
-  <strong>Built for truth-seeking. Designed for real work.</strong>
-</p>
+## What This Is
 
-## The Point
+**A focused collection of high-leverage instruction sets** for Gemma 4 E2B running in Google AI Edge Gallery.
 
-Cloud models are excellent. They are also not private.
+These skills follow strict progressive disclosure: the model only loads the full instructions when the name + description indicates the skill is relevant. The result is fast, private, high-signal reasoning without bloating every prompt.
 
-Gemma 4 E2B on-device is fast, capable, and local. It is weaker than frontier cloud models at raw knowledge and breadth. It becomes dramatically more useful when given precise, high-leverage instruction sets that activate only when needed.
-
-This repo exists to provide exactly that: focused, truth-seeking skills for real reasoning, planning, and decision work.
+They are deliberately narrow, deliberately tested, and deliberately anti-fluff.
 
 ## Philosophy
 
@@ -36,28 +35,42 @@ This repo exists to provide exactly that: focused, truth-seeking skills for real
 
 If a skill does not meaningfully improve private serious work, it does not belong here.
 
+## Skills at a Glance
+
+| Skill | Primary Purpose | Status |
+|-------|-----------------|--------|
+| [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md) | Break problems down to axioms before rebuilding | Tested & Validated |
+| [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md) | Surface failure modes before committing | Tested & Validated |
+| [Assumption Challenger](skills/assumption-challenger/SKILL.md) | Stress-test hidden assumptions | Tested & Validated |
+| [Decision Framework Builder](skills/decision-framework-builder/SKILL.md) | Structured criteria, weighting, and trade-offs | Tested & Validated |
+| [Goal to Atomic Action Decomposer](skills/goal-to-atomic-action-decomposer/SKILL.md) | Convert intent into smallest executable steps | Tested & Validated |
+| [Root Cause Analyzer](skills/root-cause-analyzer/SKILL.md) | Move from symptoms to systemic causes | Needs Work |
+| [Devil’s Advocate Simulator](skills/devils-advocate-simulator/SKILL.md) | Systematic pressure-testing of reasoning | Needs Work |
+| [Local Decision Journal](skills/local-decision-journal/SKILL.md) | Persistent tagged decisions with search & filters | Shipped |
+| [Skill Architect](skills/skill-architect/SKILL.md) | Generate or refactor skills to repo standards | Shipped (Meta) |
+| [Skill Update Reminder](skills/skill-update-reminder/SKILL.md) | Guidance for refreshing cached skills | Shipped (Meta) |
+
+See [CATALOG.md](CATALOG.md) for versions, detailed descriptions, and on-device notes.
+
 ## Current Status
 
-- **Strong / tested on device:** decision-framework-builder, first-principles-decomposer, pre-mortem-analyzer, assumption-challenger, goal-to-atomic-action-decomposer
-- **Needs improvement (triggering):** root-cause-analyzer, devils-advocate-simulator
-- **Meta skills:** skill-architect (new), skill-update-reminder
-- **New:** Local Decision Journal — local memory + tagging, multi-tag search, and date range filtering
+### Tested & Validated on Gemma 4 E2B
+- decision-framework-builder
+- first-principles-decomposer
+- pre-mortem-analyzer
+- assumption-challenger
+- goal-to-atomic-action-decomposer
 
-See [CATALOG.md](CATALOG.md) for per-skill details.
+### Shipped (Meta & Supporting)
+- local-decision-journal
+- skill-architect
+- skill-update-reminder
 
-## Featured Skills
+### Needs Improvement
+- root-cause-analyzer
+- devils-advocate-simulator
 
-| Skill | Use Case | Key Feature |
-|-------|----------|-------------|
-| 🧠 [First Principles Decomposer](skills/first-principles-decomposer/SKILL.md) | Break down complex problems to fundamentals | Strong for high-stakes analysis |
-| ⚠️ [Pre-Mortem Analyzer](skills/pre-mortem-analyzer/SKILL.md) | Identify risks before committing | Prospective failure simulation |
-| 📊 [Decision Framework Builder](skills/decision-framework-builder/SKILL.md) | Structure important choices | Weighted criteria + sensitivity |
-| 📓 [Local Decision Journal](skills/local-decision-journal/SKILL.md) | Capture & retrieve decisions over time | Tagging + date range + AND/OR search |
-| 🏗️ [Skill Architect](skills/skill-architect/SKILL.md) | Create or improve skills | Enforces repo quality standards |
-
-<p align="center">
-  <img src="assets/local-decision-journal.svg" alt="Local Decision Journal illustration" width="300" />
-</p>
+All skills are versioned. Google AI Edge Gallery caches locally — re-add the raw URL to receive updates.
 
 ## Installation
 
@@ -70,32 +83,31 @@ See [CATALOG.md](CATALOG.md) for per-skill details.
 https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/<skill-name>/SKILL.md
 ```
 
-**Example for Local Decision Journal:**
+**Example:**
+
 ```
 https://raw.githubusercontent.com/Minocrisy/minocrisy-gemma-skills/main/skills/local-decision-journal/SKILL.md
 ```
 
 ## Keeping Skills Updated
 
-Google AI Edge Gallery caches skills locally. To get updates:
+Google AI Edge Gallery caches imported skills. To update:
 
-1. Remove the old skill in the app.
+1. Remove the old skill.
 2. Re-add using the same raw URL.
 
-Check the `version:` in the raw file or [CATALOG.md](CATALOG.md).
-
-See the [Skill Update Reminder](skills/skill-update-reminder/SKILL.md) for in-app help.
+Check the `version:` field in the skill file or [CATALOG.md](CATALOG.md). The [Skill Update Reminder](skills/skill-update-reminder/SKILL.md) skill provides in-app guidance.
 
 ## Repository Layout
 
-- `skills/` — Individual skills. One kebab-case folder per skill (Text-only `SKILL.md`)
-- `CATALOG.md` — Full index with status & versions
-- `QUALITY-STANDARDS.md` — Strict rules for what ships
-- `CONTRIBUTING.md` — How to add high-quality skills
+- `skills/` — One folder per skill containing a single `SKILL.md`
+- `CATALOG.md` — Complete index with status, versions, and notes
+- `QUALITY-STANDARDS.md` — The non-negotiable bar for inclusion
+- `CONTRIBUTING.md` — How to propose or add new skills
 
 ## License
 
-Apache-2.0 — See [LICENSE](LICENSE).
+Apache-2.0 — see [LICENSE](LICENSE).
 
 ---
 
